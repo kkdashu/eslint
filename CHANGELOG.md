@@ -1,3 +1,30 @@
+v2.5.0 - March 21, 2016
+
+* 38a0a64 Docs: Clarify `linebreak-style` docs (fixes #5628) (alberto)
+* 051b255 Docs: Remove or rewrite references to former ecmaFeatures (Mark Pedrotti)
+* 9a22625 Fix: `prefer-const` false positive at non-blocked if (fixes #5610) (Toru Nagashima)
+* b1fd482 Fix: leading comments added from previous node (fixes #5531) (Kai Cataldo)
+* c335650 Docs: correct the no-confusing-arrow docs (Daniel Norman)
+* e94b77d Fix: Respect 'ignoreTrailingComments' in max-len rule (fixes #5563) (Vamshi Krishna)
+* 9289ef8 Fix: handle personal package.json without config (fixes #5496) (Denny Christochowitz)
+* 87d74b2 Fix: `prefer-const` got to not change scopes (refs #5284) (Toru Nagashima)
+* 5a881e7 Docs: Fix typo in code snippet for no-unmodified-loop-condition rule (Chris Rebert)
+* 03037c2 Update: Overrides for space-unary-ops (fixes #5060) (Afnan Fahim)
+* 24d986a Update: replace MD5 hashing of cache files with MurmurHash (fixes #5522) (Michael Ficarra)
+* f405030 Fix: Ensure allowing `await` as a property name (fixes #5564) (Toru Nagashima)
+* aefc90c Fix: `no-useless-constructor` clash (fixes #5573) (Toru Nagashima)
+* 9eaa20d Docs: Fix typo in CLI help message (ryym)
+* a7c3e67 Docs: Invalid json in `configuring.md` (alberto)
+* 4e50332 Docs: Make `prefer-template` examples consistent. (alberto)
+* cfc14a9 Fix: valid-jsdoc correctly checks type union (fixes #5260) (Kai Cataldo)
+* 689cb7d Fix: `quote-props` false positive on certain keys (fixes #5532) (Burak Yigit Kaya)
+* 3133f28 Fix: object-curly-spacing doesn't know types (fixes #5537) (fixes #5538) (Burak Yigit Kaya)
+* d0ca171 Docs: Separate parser and config questions in issue template (Kevin Partington)
+* bc769ca Fix: Improve file path resolution (fixes #5314) (Ian VanSchooten)
+* 9ca8567 Docs: Distinguish examples in rules under Best Practices part 3 (Mark Pedrotti)
+* b9c69f1 Docs: Distinguish examples in rules under Variables part 2 (Mark Pedrotti)
+* c289414 New: `no-duplicate-imports` rule (fixes #3478) (Simen Bekkhus)
+
 v2.4.0 - March 11, 2016
 
 * 97b2466 Fix: estraverse/escope to work with unknowns (fixes #5476) (Nicholas C. Zakas)
