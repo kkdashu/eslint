@@ -31,28 +31,28 @@ The following rules point out areas where you might have made mistakes.
 * [no-obj-calls](no-obj-calls.md) - disallow the use of object properties of the global object (`Math` and `JSON`) as functions (recommended)
 * [no-regex-spaces](no-regex-spaces.md) - disallow multiple spaces in a regular expression literal (recommended)
 * [no-sparse-arrays](no-sparse-arrays.md) - disallow sparse arrays (recommended)
-* [no-unexpected-multiline](no-unexpected-multiline.md) - Avoid code that looks like two expressions but is actually one (recommended)
+* [no-unexpected-multiline](no-unexpected-multiline.md) - disallow code that looks like two expressions but is actually one (recommended)
 * [no-unreachable](no-unreachable.md) - disallow unreachable statements after a return, throw, continue, or break statement (recommended)
 * [use-isnan](use-isnan.md) - disallow comparisons with the value `NaN` (recommended)
-* [valid-jsdoc](valid-jsdoc.md) - Ensure JSDoc comments are valid
-* [valid-typeof](valid-typeof.md) - Ensure that the results of typeof are compared against a valid string (recommended)
+* [valid-jsdoc](valid-jsdoc.md) - ensure JSDoc comments are valid
+* [valid-typeof](valid-typeof.md) - ensure results of typeof are compared against a valid string (recommended)
 
 ## Best Practices
 
 These are rules designed to prevent you from making mistakes. They either prescribe a better way of doing something or help you avoid footguns.
 
-* [accessor-pairs](accessor-pairs.md) - Enforces getter/setter pairs in objects
-* [array-callback-return](array-callback-return.md) - Enforces return statements in callbacks of array's methods
+* [accessor-pairs](accessor-pairs.md) - enforce getter/setter pairs in objects
+* [array-callback-return](array-callback-return.md) - enforce return statements in callbacks of array's methods
 * [block-scoped-var](block-scoped-var.md) - treat `var` statements as if they were block scoped
 * [complexity](complexity.md) - specify the maximum cyclomatic complexity allowed in a program
 * [consistent-return](consistent-return.md) - require `return` statements to either always or never specify values
 * [curly](curly.md) - specify curly brace conventions for all control statements
 * [default-case](default-case.md) - require `default` case in `switch` statements
-* [dot-location](dot-location.md) - enforces consistent newlines before or after dots
-* [dot-notation](dot-notation.md) - encourages use of dot notation whenever possible
-* [eqeqeq](eqeqeq.md) - require the use of `===` and `!==`
-* [guard-for-in](guard-for-in.md) - make sure `for-in` loops have an `if` statement
-* [no-alert](no-alert.md) - disallow the use of `alert`, `confirm`, and `prompt`
+* [dot-location](dot-location.md) - enforce consistent newlines before or after dots
+* [dot-notation](dot-notation.md) - encourage use of dot notation whenever possible
+* [eqeqeq](eqeqeq.md) - require use of `===` and `!==`
+* [guard-for-in](guard-for-in.md) - ensure `for-in` loops have an `if` statement
+* [no-alert](no-alert.md) - disallow use of `alert`, `confirm`, and `prompt`
 * [no-caller](no-caller.md) - disallow use of `arguments.caller` or `arguments.callee`
 * [no-case-declarations](no-case-declarations.md) - disallow lexical declarations in case clauses (recommended)
 * [no-div-regex](no-div-regex.md) - disallow division operators explicitly at beginning of regular expression
@@ -80,7 +80,7 @@ These are rules designed to prevent you from making mistakes. They either prescr
 * [no-native-reassign](no-native-reassign.md) - disallow reassignments of native objects
 * [no-new](no-new.md) - disallow use of the `new` operator when not part of an assignment or comparison
 * [no-new-func](no-new-func.md) - disallow use of new operator for `Function` object
-* [no-new-wrappers](no-new-wrappers.md) - disallows creating new instances of `String`,`Number`, and `Boolean`
+* [no-new-wrappers](no-new-wrappers.md) - disallow creating new instances of `String`,`Number`, and `Boolean`
 * [no-octal](no-octal.md) - disallow use of octal literals (recommended)
 * [no-octal-escape](no-octal-escape.md) - disallow use of octal escape sequences in string literals, such as `var foo = "Copyright \251";`
 * [no-param-reassign](no-param-reassign.md) - disallow reassignment of function parameters
@@ -158,19 +158,19 @@ These rules are purely matters of style and are quite subjective.
 * [eol-last](eol-last.md) - enforce newline at the end of file, with no multiple empty lines (fixable)
 * [func-names](func-names.md) - require function expressions to have a name
 * [func-style](func-style.md) - enforce use of function declarations or expressions
-* [id-blacklist](id-blacklist.md) - blacklist certain identifiers to prevent them being used
-* [id-length](id-length.md) - this option enforces minimum and maximum identifier lengths (variable names, property names etc.)
+* [id-blacklist](id-blacklist.md) - disallow certain identifiers to prevent them being used
+* [id-length](id-length.md) - enforce minimum and maximum identifier lengths (variable names, property names etc.)
 * [id-match](id-match.md) - require identifiers to match the provided regular expression
 * [indent](indent.md) - specify tab or space width for your code (fixable)
 * [jsx-quotes](jsx-quotes.md) - specify whether double or single quotes should be used in JSX attributes (fixable)
 * [key-spacing](key-spacing.md) - enforce spacing between keys and values in object literal properties
 * [keyword-spacing](keyword-spacing.md) - enforce spacing before and after keywords (fixable)
-* [linebreak-style](linebreak-style.md) - disallow mixed 'LF' and 'CRLF' as linebreaks (fixable)
+* [linebreak-style](linebreak-style.md) - enforce linebreak style (fixable)
 * [lines-around-comment](lines-around-comment.md) - enforce empty lines around comments
 * [max-depth](max-depth.md) - specify the maximum depth that blocks can be nested
 * [max-len](max-len.md) - specify the maximum length of a line in your program
 * [max-nested-callbacks](max-nested-callbacks.md) - specify the maximum depth callbacks can be nested
-* [max-params](max-params.md) - limits the number of parameters that can be used in the function declaration
+* [max-params](max-params.md) - specify the number of parameters that can be used in the function declaration
 * [max-statements](max-statements.md) - specify the maximum number of statement allowed in a function
 * [new-cap](new-cap.md) - require a capital letter for constructors
 * [new-parens](new-parens.md) - disallow the omission of parentheses when invoking a constructor with no arguments
@@ -203,11 +203,11 @@ These rules are purely matters of style and are quite subjective.
 * [padded-blocks](padded-blocks.md) - enforce padding within blocks
 * [quote-props](quote-props.md) - require quotes around object literal property names
 * [quotes](quotes.md) - specify whether backticks, double or single quotes should be used (fixable)
-* [require-jsdoc](require-jsdoc.md) - Require JSDoc comment
+* [require-jsdoc](require-jsdoc.md) - require JSDoc comment
 * [semi](semi.md) - require or disallow use of semicolons instead of ASI (fixable)
 * [semi-spacing](semi-spacing.md) - enforce spacing before and after semicolons (fixable)
-* [sort-imports](sort-imports.md) - sort import declarations within module
-* [sort-vars](sort-vars.md) - sort variables within the same declaration block
+* [sort-imports](sort-imports.md) - enforce sorting import declarations within module
+* [sort-vars](sort-vars.md) - enforce sorting variables within the same declaration block
 * [space-before-blocks](space-before-blocks.md) - require or disallow a space before blocks (fixable)
 * [space-before-function-paren](space-before-function-paren.md) - require or disallow a space before function opening parenthesis (fixable)
 * [space-in-parens](space-in-parens.md) - require or disallow spaces inside parentheses (fixable)
@@ -223,7 +223,7 @@ These rules are only relevant to ES6 environments.
 * [arrow-body-style](arrow-body-style.md) - require braces in arrow function body
 * [arrow-parens](arrow-parens.md) - require parens in arrow function arguments
 * [arrow-spacing](arrow-spacing.md) - require space before/after arrow function's arrow (fixable)
-* [constructor-super](constructor-super.md) - verify calls of `super()` in constructors (recommended)
+* [constructor-super](constructor-super.md) - ensure calling of `super()` in constructors (recommended)
 * [generator-star-spacing](generator-star-spacing.md) - enforce spacing around the `*` in generator functions (fixable)
 * [no-class-assign](no-class-assign.md) - disallow modifying variables of class declarations (recommended)
 * [no-confusing-arrow](no-confusing-arrow.md) - disallow arrow functions where they could be confused with comparisons
